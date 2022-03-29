@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/949f8edf8d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row first-row my-1">
+        <div class="col">
+          <div class="form-elements">
+            <form id="form">
+              <input
+                type="text"
+                class="form-input"
+                id="form-input"
+                placeholder="Search for a city"
+                autocomplete="off"
+              />
+              <input
+                type="submit"
+                value="Go"
+                class="submit-button"
+                id="form-btn"
+              />
+            </form>
+
+            <button class="locating-btn" id="locating-btn">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row second-row align-items-center">
+        <div class="col">
+          <div class="time-and-date" id="current-time-date"></div>
+          <div class="city" id="current-city"></div>
+        </div>
+      </div>
+      <div class="row third-row align-items-center">
+        <div class="col">
+          <img src="image/sun.png" alt="sun" class="today-img" />
+        </div>
+        <div class="col">
+          <div class="today-temp">
+            <span class="temp-number" id="degree"></span>
+            <span class="temp-unit" id="units">
+              <a href="#" id="celcius">°C </a>
+              | <a href="#" id="farenheit">°F</a></span
+            >
+          </div>
+          <div class="today-desc" id="today-desc"></div>
+          <div class="today-precip" id="today-precip"></div>
+        </div>
+      </div>
+      <div class="row bottom-row my-3">
+        <div class="col-2 px-0 offset-1">
+          <div class="card-body px-0">
+            <h5 class="card-title">Sun</h5>
+            <img src="image/sun-cloud.png" alt="" class="card-img" />
+            <p class="card-text">2/5°C</p>
+          </div>
+        </div>
+        <div class="col-2 px-0">
+          <div class="card-body px-0">
+            <h5 class="card-title">Mon</h5>
+            <img src="image/snow.png" alt="" class="card-img" />
+            <p class="card-text">1/2°C</p>
+          </div>
+        </div>
+        <div class="col-2 px-0">
+          <div class="card-body px-0">
+            <h5 class="card-title">Tue</h5>
+            <img src="image/rain.png" alt="" class="card-img" />
+            <p class="card-text">2/5°C</p>
+          </div>
+        </div>
+        <div class="col-2 px-0">
+          <div class="card-body px-0">
+            <h5 class="card-title">Wed</h5>
+            <img src="image/thunderstorm.png" alt="" class="card-img" />
+            <p class="card-text">2/5°C</p>
+          </div>
+        </div>
+        <div class="col-2 px-0">
+          <div class="card-body last-day px-0">
+            <h5 class="card-title">Thu</h5>
+            <img src="image/sun.png" alt="" class="card-img" />
+            <p class="card-text">5/10°C</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

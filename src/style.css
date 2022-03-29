@@ -1,0 +1,135 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: url("../image/bg-image1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.151);
+  padding-bottom: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+form,
+.form-elements {
+  display: inline;
+}
+.form-input,
+.submit-button,
+.locating-btn {
+  border-radius: 5px;
+  border: none;
+  height: 2rem;
+  display: inline;
+}
+
+.form-input {
+  color: rgba(118, 139, 165);
+  width: 70%;
+  padding: 0.45rem;
+  font-size: 0.8rem;
+}
+
+::placeholder {
+  color: rgba(118, 139, 165, 0.4);
+}
+
+.submit-button {
+  color: rgba(76, 104, 138, 0.555);
+  font-weight: 700;
+  margin-left: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.822);
+}
+.submit-button:hover {
+  color: rgba(255, 255, 255, 0.822);
+  background-color: rgba(76, 104, 138, 0.281);
+  border: none;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.locating-btn {
+  color: rgba(77, 104, 138, 0.555);
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0rem 0.5rem;
+}
+.locating-btn:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.822);
+  transition: all 200ms;
+}
+.first-row {
+  padding: 1rem 0;
+}
+.second-row,
+.third-row {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.second-row {
+  background-color: rgba(76, 104, 138, 0.281);
+  background-size: 100%;
+  padding: 1.5rem 2rem;
+}
+.third-row {
+  padding: 2.5rem 1rem;
+}
+.time-and-date {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.city {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.today-img {
+  width: 12rem;
+  padding: 1rem;
+}
+.today-temp {
+  font-size: 4rem;
+  font-weight: 900;
+  vertical-align: top;
+}
+.temp-unit {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: rgb(59, 86, 119);
+  transition: all 200ms;
+}
+.card-body {
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(61, 86, 117, 0.329);
+  border-radius: 5px;
+  margin: 0 2px;
+}
+.last-day {
+  border: none;
+}
+.card-title,
+.card-text {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+.card-img {
+  width: 3rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
